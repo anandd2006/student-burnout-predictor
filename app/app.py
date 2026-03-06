@@ -24,6 +24,12 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import seaborn as sns
 import streamlit as st
+import subprocess
+import os
+
+# Auto-train model if not already trained
+if not os.path.exists("models/burnout_model.pkl"):
+    subprocess.run(["python", "src/train_model.py"])
 
 # ── Make sure src/ is on the Python path ─────────────────────────────────────
 SRC_DIR = os.path.join(os.path.dirname(__file__), "..", "src")
