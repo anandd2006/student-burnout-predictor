@@ -1,0 +1,90 @@
+{
+  "best_model": "Logistic Regression",
+  "accuracy": 0.805,
+  "cv_score": 0.8025,
+  "confusion_matrix": [
+    [
+      43,
+      0,
+      13
+    ],
+    [
+      0,
+      10,
+      13
+    ],
+    [
+      8,
+      5,
+      108
+    ]
+  ],
+  "classification_report": {
+    "High": {
+      "precision": 0.8431372549019608,
+      "recall": 0.7678571428571429,
+      "f1-score": 0.8037383177570093,
+      "support": 56.0
+    },
+    "Low": {
+      "precision": 0.6666666666666666,
+      "recall": 0.43478260869565216,
+      "f1-score": 0.5263157894736842,
+      "support": 23.0
+    },
+    "Medium": {
+      "precision": 0.8059701492537313,
+      "recall": 0.8925619834710744,
+      "f1-score": 0.8470588235294118,
+      "support": 121.0
+    },
+    "accuracy": 0.805,
+    "macro avg": {
+      "precision": 0.7719246902741196,
+      "recall": 0.6984005783412899,
+      "f1-score": 0.7257043102533683,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.8003570383377232,
+      "recall": 0.805,
+      "f1-score": 0.7980436329967304,
+      "support": 200.0
+    }
+  },
+  "feature_importance": {
+    "stress_level": 0.2519,
+    "sleep_hours": 0.2015,
+    "study_hours": 0.1716,
+    "assignments_due": 0.13,
+    "break_hours": 0.1267,
+    "exercise_minutes": 0.1182
+  },
+  "model_comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.805,
+      "cv_score": 0.8025
+    },
+    "Random Forest": {
+      "accuracy": 0.785,
+      "cv_score": 0.7725
+    },
+    "Decision Tree": {
+      "accuracy": 0.665,
+      "cv_score": 0.7012
+    }
+  },
+  "feature_cols": [
+    "sleep_hours",
+    "study_hours",
+    "stress_level",
+    "assignments_due",
+    "break_hours",
+    "exercise_minutes"
+  ],
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ]
+}
